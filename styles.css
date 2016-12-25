@@ -1,0 +1,129 @@
+:root {
+  --blur: 0px;
+  --brightness: 1;
+  --contrast: 100%;
+  --hue: 0deg;
+  --invert: 0%;
+  --opacity: 1;
+  --saturate: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open-sans', sans-serif;
+  text-transform: uppercase;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+img {
+  filter: invert(var(--invert)) contrast(var(--contrast)) opacity(var(--opacity)) blur(var(--blur)) hue-rotate(var(--hue)) saturate(var(--saturate)) brightness(var(--brightness));
+  margin: auto;
+  max-width: 550px;
+  width: 100%;
+}
+
+.Variables {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  padding: 15px;
+  width: 100vw;
+}
+
+.Variables-controls {
+  display: grid;
+  font-size: .8em;
+  font-weight: 100;
+  grid-column-gap: 30px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  letter-spacing: 1px;
+  margin: auto;
+  padding: 25px;
+  width: calc(100vw - 200px);
+}
+
+.Variables-image {
+  margin: auto;
+}
+
+/* Range Input Styles */
+
+input[type=range] {
+  background: transparent;
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background: #222;
+  border-radius: 5px;
+  height: 10px;
+  margin-top: -4px;
+  width: 10px;
+}
+
+input[type=range]::-moz-range-thumb {
+  background: #222;
+  border-radius: 5px;
+  height: 10px;
+  width: 10px;
+}
+
+input[type=range]::-ms-thumb {
+  background: #222;
+  border-radius: 5px;
+  height: 10px;
+  width: 10px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background: #fff;
+  border: 1px solid #222;
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
+}
+
+input[type=range]::-moz-range-track {
+  background: #fff;
+  border: 1px solid #222;
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
+}
+
+input[type=range]::-ms-track {
+  background: #fff;
+  border: 1px solid #222;
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
+}
